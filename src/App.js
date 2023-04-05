@@ -19,11 +19,11 @@ const App = () => {
   return (
     <div className="main-container">
       <h1>Welcome to Weather Check!</h1>
-      <h3>Please enter any area/city!</h3>
+
       <input
         type="text"
         className="search"
-        placeholder="Search..."
+        placeholder="Enter a city/area..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         onKeyPress={search}
@@ -48,6 +48,7 @@ const App = () => {
           </div>
         </div>
       )}
+      <p>@copy right 2023</p>
     </div>
   );
 };
